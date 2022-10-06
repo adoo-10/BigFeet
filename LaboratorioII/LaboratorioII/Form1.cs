@@ -15,10 +15,12 @@ namespace LaboratorioII
         List<Calzado> calzados = new List<Calzado>();
         public string nomProd;
         int id = 0;
+        
+        string newid;
 
         public void LimpiarCampos()
         {
-            txtId.Clear();
+          
             txtMarca.Clear();
             txtDescrip.Clear();
             cbxCategoria.Text = "";
@@ -97,7 +99,7 @@ namespace LaboratorioII
                 var busqueda = calzados.Where(cl => cl.idProducto == int.Parse(txtBuscar.Text));
                 foreach (Calzado cl in busqueda)
                 {
-                    txtId.Text = Convert.ToString(cl.idProducto);
+                     newid = Convert.ToString(cl.idProducto);
                     txtMarca.Text = cl.Marca;
                     txtDescrip.Text = cl.Descripcion;
                     cbxCategoria.Text = cl.Categoria;
@@ -185,7 +187,7 @@ namespace LaboratorioII
                     if (cls.idProducto == Convert.ToInt32(txtId.Text)) ;
                     {
                         double pVenta;
-                        cls.idProducto = Convert.ToInt32(txtId.Text);
+                        cls.idProducto =Convert.ToInt32( newid);
                         cls.Marca = txtMarca.Text;
                         cls.Descripcion = txtDescrip.Text;
                         cls.Categoria = cbxCategoria.Text;
@@ -195,6 +197,7 @@ namespace LaboratorioII
                         pVenta = double.Parse(txtPrecioC.Text) + (double.Parse(txtPrecioC.Text) * 0.13);
 
                         cls.PrecioVenta = pVenta;
+                        LimpiarCampos();
                     }
                 }
             }
@@ -203,6 +206,7 @@ namespace LaboratorioII
 
                 throw;
             }
+           
         }
 
 
@@ -211,11 +215,11 @@ namespace LaboratorioII
         {
             try
             {
-                if (txtId.Text != "")
+                if (newid != "")
                 {
                     foreach (Calzado p in calzados)
                     {
-                        if (p.idProducto == Convert.ToInt32(txtId.Text))
+                        if (p.idProducto ==Convert.ToInt32( newid))
                         {
                             DialogResult respuesta = MessageBox.Show("Esta seguro de eliminar el registro?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                             if (respuesta == DialogResult.Yes)
@@ -307,15 +311,15 @@ namespace LaboratorioII
         {
             Editar();
             Mostrar();
-            LimpiarCampos();
-            idProducto();
+            
+           
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             Eliminar();
             LimpiarCampos();
-            idProducto();
+          
             Mostrar();
         }
 

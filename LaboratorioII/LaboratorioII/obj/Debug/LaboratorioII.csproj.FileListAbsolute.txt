@@ -31,3 +31,14 @@ C:\Users\mmaye\Documents\LaboratorioII\LaboratorioII\obj\Debug\LaboratorioII.csp
 C:\Users\mmaye\Documents\LaboratorioII\LaboratorioII\obj\Debug\LaboratorioII.csproj.CoreCompileInputs.cache
 C:\Users\mmaye\Documents\LaboratorioII\LaboratorioII\obj\Debug\LaboratorioII.exe
 C:\Users\mmaye\Documents\LaboratorioII\LaboratorioII\obj\Debug\LaboratorioII.pdb
+C:\Users\mmaye\Documents\GitHub\BigFeet\LaboratorioII\LaboratorioII\bin\Debug\LaboratorioII.exe.config
+C:\Users\mmaye\Documents\GitHub\BigFeet\LaboratorioII\LaboratorioII\bin\Debug\LaboratorioII.exe
+C:\Users\mmaye\Documents\GitHub\BigFeet\LaboratorioII\LaboratorioII\bin\Debug\LaboratorioII.pdb
+C:\Users\mmaye\Documents\GitHub\BigFeet\LaboratorioII\LaboratorioII\obj\Debug\LaboratorioII.csproj.AssemblyReference.cache
+C:\Users\mmaye\Documents\GitHub\BigFeet\LaboratorioII\LaboratorioII\obj\Debug\LaboratorioII.csproj.SuggestedBindingRedirects.cache
+C:\Users\mmaye\Documents\GitHub\BigFeet\LaboratorioII\LaboratorioII\obj\Debug\LaboratorioII.Form1.resources
+C:\Users\mmaye\Documents\GitHub\BigFeet\LaboratorioII\LaboratorioII\obj\Debug\LaboratorioII.Properties.Resources.resources
+C:\Users\mmaye\Documents\GitHub\BigFeet\LaboratorioII\LaboratorioII\obj\Debug\LaboratorioII.csproj.GenerateResource.cache
+C:\Users\mmaye\Documents\GitHub\BigFeet\LaboratorioII\LaboratorioII\obj\Debug\LaboratorioII.csproj.CoreCompileInputs.cache
+C:\Users\mmaye\Documents\GitHub\BigFeet\LaboratorioII\LaboratorioII\obj\Debug\LaboratorioII.exe
+C:\Users\mmaye\Documents\GitHub\BigFeet\LaboratorioII\LaboratorioII\obj\Debug\LaboratorioII.pdb
