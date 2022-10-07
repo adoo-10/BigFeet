@@ -84,7 +84,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(73, 111);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 22);
+            this.label1.Size = new System.Drawing.Size(137, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "id Producto";
             // 
@@ -95,7 +95,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(120, 322);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 22);
+            this.label2.Size = new System.Drawing.Size(62, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Talla";
             // 
@@ -106,7 +106,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(86, 270);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 22);
+            this.label3.Size = new System.Drawing.Size(115, 32);
             this.label3.TabIndex = 2;
             this.label3.Text = "Categoria";
             // 
@@ -117,7 +117,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Location = new System.Drawing.Point(73, 214);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 22);
+            this.label4.Size = new System.Drawing.Size(139, 32);
             this.label4.TabIndex = 3;
             this.label4.Text = "Descripcion";
             // 
@@ -128,7 +128,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.Location = new System.Drawing.Point(108, 163);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 22);
+            this.label5.Size = new System.Drawing.Size(81, 32);
             this.label5.TabIndex = 4;
             this.label5.Text = "Marca";
             // 
@@ -139,7 +139,7 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Location = new System.Drawing.Point(56, 423);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(112, 22);
+            this.label6.Size = new System.Drawing.Size(171, 32);
             this.label6.TabIndex = 5;
             this.label6.Text = "Precio Compra";
             // 
@@ -150,7 +150,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label7.Location = new System.Drawing.Point(95, 379);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 22);
+            this.label7.Size = new System.Drawing.Size(111, 32);
             this.label7.TabIndex = 6;
             this.label7.Text = "Cantidad";
             // 
@@ -160,7 +160,7 @@
             this.txtId.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(203, 108);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(268, 29);
+            this.txtId.Size = new System.Drawing.Size(268, 40);
             this.txtId.TabIndex = 7;
             // 
             // txtMarca
@@ -168,40 +168,45 @@
             this.txtMarca.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMarca.Location = new System.Drawing.Point(203, 156);
             this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(268, 29);
+            this.txtMarca.Size = new System.Drawing.Size(268, 40);
             this.txtMarca.TabIndex = 8;
+            this.txtMarca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMarca_KeyPress);
             // 
             // txtPrecioC
             // 
             this.txtPrecioC.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrecioC.Location = new System.Drawing.Point(203, 420);
             this.txtPrecioC.Name = "txtPrecioC";
-            this.txtPrecioC.Size = new System.Drawing.Size(268, 29);
+            this.txtPrecioC.Size = new System.Drawing.Size(268, 40);
             this.txtPrecioC.TabIndex = 9;
+            this.txtPrecioC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecioC_KeyPress);
             // 
             // txtCantidad
             // 
             this.txtCantidad.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCantidad.Location = new System.Drawing.Point(203, 372);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(268, 29);
+            this.txtCantidad.Size = new System.Drawing.Size(268, 40);
             this.txtCantidad.TabIndex = 10;
+            this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidad_KeyPress);
             // 
             // txtTalla
             // 
             this.txtTalla.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTalla.Location = new System.Drawing.Point(203, 319);
             this.txtTalla.Name = "txtTalla";
-            this.txtTalla.Size = new System.Drawing.Size(268, 29);
+            this.txtTalla.Size = new System.Drawing.Size(268, 40);
             this.txtTalla.TabIndex = 11;
+            this.txtTalla.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTalla_KeyPress);
             // 
             // txtDescrip
             // 
             this.txtDescrip.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescrip.Location = new System.Drawing.Point(203, 207);
             this.txtDescrip.Name = "txtDescrip";
-            this.txtDescrip.Size = new System.Drawing.Size(268, 29);
+            this.txtDescrip.Size = new System.Drawing.Size(268, 40);
             this.txtDescrip.TabIndex = 12;
+            this.txtDescrip.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDescrip_KeyPress);
             // 
             // cbxCategoria
             // 
@@ -214,8 +219,9 @@
             "Niña"});
             this.cbxCategoria.Location = new System.Drawing.Point(203, 262);
             this.cbxCategoria.Name = "cbxCategoria";
-            this.cbxCategoria.Size = new System.Drawing.Size(268, 30);
+            this.cbxCategoria.Size = new System.Drawing.Size(268, 40);
             this.cbxCategoria.TabIndex = 13;
+            this.cbxCategoria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbxCategoria_KeyPress);
             // 
             // label8
             // 
@@ -225,7 +231,7 @@
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label8.Location = new System.Drawing.Point(177, 486);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(294, 30);
+            this.label8.Size = new System.Drawing.Size(440, 46);
             this.label8.TabIndex = 14;
             this.label8.Text = "Filtrar por Categoria o Marca";
             // 
@@ -236,7 +242,7 @@
             this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label9.Location = new System.Drawing.Point(12, 563);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(173, 22);
+            this.label9.Size = new System.Drawing.Size(267, 32);
             this.label9.TabIndex = 15;
             this.label9.Text = "Seleccionar como filtrar:";
             // 
@@ -245,8 +251,9 @@
             this.txtDato.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDato.Location = new System.Drawing.Point(203, 606);
             this.txtDato.Name = "txtDato";
-            this.txtDato.Size = new System.Drawing.Size(237, 29);
+            this.txtDato.Size = new System.Drawing.Size(237, 40);
             this.txtDato.TabIndex = 16;
+            this.txtDato.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDato_KeyPress);
             // 
             // label10
             // 
@@ -255,7 +262,7 @@
             this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label10.Location = new System.Drawing.Point(138, 606);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(47, 22);
+            this.label10.Size = new System.Drawing.Size(72, 32);
             this.label10.TabIndex = 17;
             this.label10.Text = "Dato:";
             // 
@@ -268,8 +275,9 @@
             "Categoria"});
             this.cbxFiltro.Location = new System.Drawing.Point(203, 560);
             this.cbxFiltro.Name = "cbxFiltro";
-            this.cbxFiltro.Size = new System.Drawing.Size(237, 30);
+            this.cbxFiltro.Size = new System.Drawing.Size(237, 40);
             this.cbxFiltro.TabIndex = 18;
+            this.cbxFiltro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbxFiltro_KeyPress);
             // 
             // btnFiltrar
             // 
@@ -290,19 +298,21 @@
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label11.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label11.Location = new System.Drawing.Point(637, 20);
+            this.label11.Location = new System.Drawing.Point(520, 14);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(90, 34);
+            this.label11.Size = new System.Drawing.Size(251, 51);
             this.label11.TabIndex = 22;
-            this.label11.Text = "Buscar";
+            this.label11.Text = "Buscar por ID";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // txtBuscar
             // 
             this.txtBuscar.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscar.Location = new System.Drawing.Point(777, 25);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(396, 29);
+            this.txtBuscar.Size = new System.Drawing.Size(396, 40);
             this.txtBuscar.TabIndex = 23;
+            this.txtBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscar_KeyPress);
             // 
             // btnEliminar
             // 
@@ -496,7 +506,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.ClientSize = new System.Drawing.Size(1218, 745);
